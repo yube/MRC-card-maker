@@ -415,10 +415,9 @@ def generate_manga_list(selected_numbers, filename="items_list.txt"):
         for num in selected_numbers:
             if num in manga_data:
                 file.write(manga_data[num] + "\n\n")
+                # if you're running this on an online compiler add # in front of the line above and delete the # from the line below
+                #print(manga_data[num]) 
             else:
                 file.write(f"[b]{num} - Not Found[/b]\n\n")
-
-    print(f"Items list saved to {filename}")
-
 
 generate_manga_list(selected_numbers)
