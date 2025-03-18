@@ -1,3 +1,5 @@
+selected_numbers = [20,23,3,16,7,33,39,17,44,32,24,21,31,37,53,43]
+
 def generate_manga_list(selected_numbers, filename="items_list.txt"):
     manga_data = {
     1: """[b]1 - El Gallo[/b]
@@ -419,5 +421,4 @@ def generate_manga_list(selected_numbers, filename="items_list.txt"):
     print(f"Items list saved to {filename}")
 
 
-selected_numbers = [20,23,3,16,7,33,39,17,44,32,24,21,31,37,53,43]
 generate_manga_list(selected_numbers)
